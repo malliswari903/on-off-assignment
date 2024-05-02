@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <button class="on" onclick=" 
+       if(document.querySelector('button').innerText=='On'){
+        document.querySelector('button').innerText='Off'
+        document.querySelector('.container').classList.add('clicked')
+        document.querySelector('.on').classList.add('Off')
+       } 
+    else if( document.querySelector('button').innerText=='Off'){
+        document.querySelector('button').innerText='On'
+        document.querySelector('.container').classList.remove('clicked')
+        document.querySelector('.on').classList.remove('Off')
+
+
+    }">On</button>
+
+    <script>
+ 
+    </script>
+    
+    </div>
+</body>
+</html>
